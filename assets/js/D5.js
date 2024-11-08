@@ -131,25 +131,63 @@ fizzBuzz();
     Utilizza un ciclo while per stampare in console i valori del seguente array numerico fino al raggiungimento del numero 32.
 */
 const numericArray = [
-  6, 90, 45, 75, 84, 98, 35, 74, 31, 2, 8, 23, 100, 32, 66, 313, 321, 105,
-]
+  6, 90, 45, 75, 84, 98, 35, 74, 31, 2, 8, 23, 100, 32, 66, 313, 321, 105, 
+];
+console.log("Esercizio 9");
+const endWhileCicle = 32;           //il numero inserito deve essere presente nell'array sopra, altrimenti si crea un loop
+                                    //la Funzione commentata sotto esegue un verifica di blocco.
+stampValori();
+
+/*checkNumber();
+function checkNumber(){
+  if(numericArray.includes(endWhileCicle)){
+    stampValori();
+  }else{
+    console.log("Il numero di blocco non è presente, rischi di creare un Loop");
+  }
+} */
 function stampValori(){
 let i = 0;
-while (numericArray[i] !== 32){
-  if(numericArray[i] === 32){
-    console.log(numericArray[i]);
-    break;
-    }else{
-    console.log(numericArray[i]);
+while (numericArray[i] !== endWhileCicle){
+  console.log(numericArray[i]);
     i++;
   }
+  console.log(numericArray[i]);   //quanto esce dal ciclo While ha trovato sicuramente trovato il numero 32 o numero dato in input
+  return;
 }
-}
-stampValori();
 
 /* ESERCIZIO 10
     Partendo dall'array fornito e utilizzando un costrutto switch, genera un nuovo array composto dalle posizioni di ogni carattere all'interno
     dell'alfabeto italiano.
     es. [f, b, e] --> [6, 2, 5]
 */
-const charactersArray = ['g', 'n', 'u', 'z', 'd']
+const charactersArray = ["g", 'n', 'u', 'z', 'd'];
+
+console.log("Esercizio 10");
+const alfabeto = ["a","b","c","d","e","f","g","h","i","l","m","n","o","p","q","r","s","t","u","v","z"];
+
+console.log(search());
+
+function search(){
+  newArray=[];
+
+   for(let i = 0; i< charactersArray.length;i++){
+    let verifica = charactersArray[i].slice();
+    switch(alfabeto.includes(verifica)) {
+          case true:
+            newArray.push(alfabeto.indexOf(verifica)+ 1);
+            break;
+          case false:
+            break;
+      }
+    }
+    return newArray;
+}
+
+  
+    
+
+
+
+
+
