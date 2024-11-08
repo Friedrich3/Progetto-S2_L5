@@ -1,1 +1,133 @@
 /* Your styles here */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color:#EAEDED ;
+}
+
+.logo{
+  background-color:#222F3E ;
+}
+
+header{
+  text-align: left;
+  
+}
+
+header img{
+  width: 10% ;
+  padding: 0.5em 2em;
+}
+nav ul{
+  background-color:#364759 ;
+  margin: 0;
+  padding: 0.5em 2em;
+}
+nav ul li {
+  display: inline;
+  padding-right: 1.5em;
+  color: white;
+}
+a:link,a:visited{
+  color: white;
+  text-decoration: none;
+}
+
+
+main section{
+  width: 95%;
+  margin: 0 auto;
+}
+
+#giftCards p {
+  background-color:#F56600 ;
+  color:white;
+  padding: 0.5em 0;
+}
+#giftGuides{
+  background-image: url("../img/bg-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding: 1.5em 0;
+}
+h2, h4{
+  color: white;
+}
+#sectionDue{
+  background-color: white;
+}
+#sectionDue p{
+  text-align: left;
+  font-weight: 500;
+  padding: 0.5em 1em;
+  font-size: 1.3em;
+  
+}
+#sectionDue p a{
+  color: #007185;
+  font-weight: bold;
+  font-size: 0.8em;
+  padding-left: 1em; 
+}
+.sectionDue-div {
+  width: 15%;
+  vertical-align: top;
+  text-align: center;
+  border-radius: 2%;
+  display: inline-block;
+  margin: 1% 1%;
+
+}
+.img-container{
+  width: 100%;
+  height: 0;
+  padding-bottom: 27em;
+  position:relative;
+  box-shadow: 10px 10px 15px lightgrey;
+  border-radius: 5%;
+}
+.img-container img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  object-fit:cover;
+  border-radius: 5%;
+  
+}
+
+#sectionTre img, #sectionQuattro img{
+   max-width: 100%;
+   
+}
+#sectionTre p, #sectionQuattro p{
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 2em;  
+}
+#sectionTre p a, #sectionQuattro p a{
+  margin: 0;
+  color: #007185;
+  font-weight: bold;
+  font-size: 0.8em;
+  padding-left: 1em; 
+}
+footer p{
+  background-color:#364759;
+  margin:0 ;
+  color: white;
+  padding: 0.5em 0;
+}
+footer div{
+  background-color:#222F3E;
+  padding: 2em 0;  
+}
+footer img{
+  width: 10%;
+}
